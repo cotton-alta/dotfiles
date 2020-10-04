@@ -52,6 +52,10 @@ NeoBundle 'w0ng/vim-hybrid'
 
 NeoBundle 'scrooloose/nerdtree'
 
+NeoBundle 'w0rp/ale'
+
+NeoBundle 'itchyny/lightline.vim'
+
 "----------------------------------------------------------
 call neobundle#end()
 
@@ -67,3 +71,12 @@ colorscheme hybrid
 
 " ファイルツリーの設定
 map <C-n> :NERDTreeToggle<CR>
+
+" Lintの設定
+let g:ale_linters = {
+\ 'javascript': ['eslint'],
+\ }
+
+" lightlineの設定
+let g:lightline = {}
+set laststatus=2
