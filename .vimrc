@@ -76,6 +76,7 @@ map <C-n> :NERDTreeToggle<CR>
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \ }
+let g:ale_sign_column_always = 1
 
 " lightlineの設定
 let g:lightline = {}
