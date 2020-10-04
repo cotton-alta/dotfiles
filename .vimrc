@@ -50,6 +50,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'w0ng/vim-hybrid'
 
+NeoBundle 'scrooloose/nerdtree'
+
 "----------------------------------------------------------
 call neobundle#end()
 
@@ -63,3 +65,5 @@ set t_Co=256
 set background=dark
 colorscheme hybrid
 
+" ファイルツリーの設定
+map <C-n> :NERDTreeToggle<CR>
