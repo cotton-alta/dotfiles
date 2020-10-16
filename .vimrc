@@ -56,6 +56,8 @@ NeoBundle 'w0rp/ale'
 
 NeoBundle 'itchyny/lightline.vim'
 
+NeoBundle 'aklt/plantuml-syntax'
+
 "----------------------------------------------------------
 call neobundle#end()
 
@@ -82,3 +84,9 @@ let g:ale_sign_column_always = 1
 " lightlineの設定
 let g:lightline = {}
 set laststatus=2
+
+" PlantUMLの設定
+" Windowsでのブラウザ自動起動
+u FileType plantuml command! OpenUml :!start chrome %
+
+
