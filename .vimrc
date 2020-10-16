@@ -88,5 +88,3 @@ set laststatus=2
 " PlantUMLの設定
 " Windowsでのブラウザ自動起動
 u FileType plantuml command! OpenUml :!start chrome %
-
-
