@@ -58,6 +58,10 @@ NeoBundle 'itchyny/lightline.vim'
 
 NeoBundle 'aklt/plantuml-syntax'
 
+NeoBundle 'bronson/vim-trailing-whitespace'
+
+NeoBundle 'Yggdroot/indentLine'
+
 "----------------------------------------------------------
 call neobundle#end()
 
