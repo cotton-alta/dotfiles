@@ -1,1 +1,1 @@
-alias swprm = "find . -name '.*.sw*'|xargs rm"
+alias swprm='find . -name '.*.sw*'|xargs rm'
