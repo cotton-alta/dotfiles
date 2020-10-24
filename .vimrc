@@ -62,6 +62,8 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 
 NeoBundle 'Yggdroot/indentLine'
 
+NeoBundle 'simeji/winresizer'
+
 "----------------------------------------------------------
 call neobundle#end()
 
