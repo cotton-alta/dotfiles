@@ -33,6 +33,9 @@ nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
 
+" beep音と画面フラッシュを止める
+set vb t_vb=
+
 " NeoBundleの設定
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
