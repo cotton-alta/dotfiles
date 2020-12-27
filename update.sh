@@ -11,3 +11,6 @@ fi
 echo "Creating symbolic links..."
 ln -si $dst/.vimrc $HOME/_vimrc || echo "skipped"
 ln -si $dst/.bash_profile $HOME/_bash_profile || echo "skipped"
+
+echo "Overwrite Syntax..."
+cp -rf $dst/after $HOME/.vim
