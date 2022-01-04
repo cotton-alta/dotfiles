@@ -1,0 +1,2 @@
+brew "ghq"
+brew "tig"

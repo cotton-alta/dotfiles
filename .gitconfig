@@ -1,2 +1,7 @@
+[ghq]
+    root = ~/.ghq/src
+[user]
+    name = cotton
+    email = chinoknct@gmail.com
 [core]
     excludesFile = ~/.gitignore_global

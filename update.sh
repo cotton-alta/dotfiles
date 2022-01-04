@@ -8,6 +8,10 @@ else
   (cd $dst && git pull)
 fi
 
+echo "Installing packages..."
+cp -i $dst/Brewfile $HOME/Brewfile
+brew bundle
+
 echo "Creating symbolic links..."
 ln -si $dst/.vimrc $HOME/_vimrc || echo "skipped"
 
