@@ -24,3 +24,6 @@ cp -ri $dst/colors $HOME/.vim
 echo "Setting gitconfig..."
 cp -i $dst/.gitconfig $HOME/.gitconfig
 cp -i $dst/.gitignore_global $HOME/.gitignore_global
+
+echo "Setting iTerm2 config..."
+$dst/iTerm2/init.sh
