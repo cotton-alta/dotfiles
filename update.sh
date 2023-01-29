@@ -33,3 +33,5 @@ echo "Setting iTerm2 config..."
 ln -fs $dst/iTerm2/com.googlecode.iterm2.plist $HOME/Library/Preferences
 killall cfprefsd
 
+echo "Setup is complete \U1F389"
+
