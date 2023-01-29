@@ -42,7 +42,7 @@ if has('vim_starting')
 
   if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
     echo "install NeoBundle..."
-    call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
+    call system("git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
   endif
 endif
 
