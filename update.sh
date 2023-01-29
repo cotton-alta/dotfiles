@@ -1,3 +1,7 @@
+#!/bin/zsh
+
+set -ue -o pipefail
+
 dst="$HOME/dotfiles"
 
 if [ ! -e $dst/.git ]; then
