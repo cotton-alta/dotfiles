@@ -1,5 +1,5 @@
 [ghq]
-    root = ~/.ghq/src
+    root = ~/src
 [user]
     name = cotton
     email = chinoknct@gmail.com
