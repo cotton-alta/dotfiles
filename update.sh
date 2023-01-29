@@ -26,4 +26,6 @@ cp -i $dst/.gitconfig $HOME/.gitconfig
 cp -i $dst/.gitignore_global $HOME/.gitignore_global
 
 echo "Setting iTerm2 config..."
-$dst/iTerm2/init.sh
+ln -fs $dst/iTerm2/com.googlecode.iterm2.plist $HOME/Library/Preferences
+killall cfprefsd
+
