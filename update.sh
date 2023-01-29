@@ -17,6 +17,7 @@ cp -i $dst/Brewfile $HOME/Brewfile
 brew bundle
 
 echo "Creating symbolic links..."
+ln -si $dst/.zshrc $HOME/.zshrc || echo "skipped"
 ln -si $dst/.vimrc $HOME/_vimrc || echo "skipped"
 
 echo "Overwrite Syntax..."
