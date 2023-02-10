@@ -12,3 +12,16 @@ export NVM_DIR="$HOME/.nvm"
 # direnv init
 eval "$(direnv hook zsh)"
 
+# load zgen
+source "$HOME/.zgen/zgen.zsh"
+
+# if the init script doesn't exist
+if ! zgen saved; then
+
+  # specify plugins here
+  zgen load paulirish/git-open
+
+  # generate the init script from plugins above
+  zgen save
+fi
+

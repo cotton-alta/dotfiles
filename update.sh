@@ -12,6 +12,14 @@ else
   (cd $dst && git pull)
 fi
 
+if [ ! -e $HOME/.zgen ]; then
+  echo "Cloning zgen..."
+  git clone https://github.com/tarjoilija/zgen.git $HOME/.zgen
+else
+  echo "Updating zgen..."
+  (cd $HOME/.zgen && git pull)
+fi
+
 echo "Installing packages..."
 cp -i $dst/Brewfile $HOME/Brewfile
 brew bundle
