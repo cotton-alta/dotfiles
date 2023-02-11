@@ -5,3 +5,9 @@
     email = chinoknct@gmail.com
 [core]
     excludesFile = ~/.gitignore_global
+[alias]
+    ss = status
+    co = checkout
+    st = stash -u
+    br = branch
+
