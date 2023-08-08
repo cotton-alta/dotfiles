@@ -10,4 +10,5 @@
     co = checkout
     st = stash -u
     br = branch
-
+[fetch]
+    prune = true
