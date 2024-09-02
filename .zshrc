@@ -44,7 +44,7 @@ function git-branch {
   else
     branch_status=""
   fi
-  echo "%F{212}$branch_name%f${branch_status}"
+  echo "\ue725 %F{212}$branch_name%f${branch_status}"
 }
 
 setopt prompt_subst
