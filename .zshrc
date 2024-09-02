@@ -50,5 +50,5 @@ function git-branch {
 setopt prompt_subst
 
 # prompt setting
-PROMPT=$'%F{81}%n%f \U26FA %F{121}%(5~,%-2~/.../%2~,%~)%f `git-branch` %# '
+PROMPT=$'%F{81}%n%f %F{121}%(5~,%-2~/.../%2~,%~)%f `git-branch` %# '
 
