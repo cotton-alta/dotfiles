@@ -1,6 +1,7 @@
 brew "ghq"
 brew "tig"
 brew "rbenv"
+brew "goenv"
 brew "nvm"
 brew "direnv"
 cask "font-monaspace"
