@@ -30,7 +30,8 @@ fi
 function git-branch {
   local branch_name st branch_status
 
-  if [ ! -e  ".git" ]; then
+  # git rev-parse --git-dir で.gitディレクトリの場所を確認
+  if ! git rev-parse --git-dir > /dev/null 2>&1; then
     return
   fi
   branch_name=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
