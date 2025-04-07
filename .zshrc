@@ -30,7 +30,7 @@ fi
 function git-branch {
   local branch_name st branch_status
 
-  # git rev-parse --git-dir で.gitディレクトリの場所を確認
+  # Check if current directory is a git repository by looking for .git directory
   if ! git rev-parse --git-dir > /dev/null 2>&1; then
     return
   fi
