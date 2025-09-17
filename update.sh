@@ -38,6 +38,14 @@ echo "Setting gitconfig..."
 cp -i $dst/.gitconfig $HOME/.gitconfig
 cp -i $dst/.gitignore_global $HOME/.gitignore_global
 
+echo "Merging local gitignore settings..."
+if [ -f $HOME/.gitignore_local ]; then
+  cat $HOME/.gitignore_local >> $HOME/.gitignore_global
+  echo "Local gitignore settings merged."
+else
+  echo "No local gitignore file found."
+fi
+
 echo "Setting iTerm2 config..."
 ln -fs $dst/iTerm2/com.googlecode.iterm2.plist $HOME/Library/Preferences
 killall cfprefsd

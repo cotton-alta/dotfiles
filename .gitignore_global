@@ -1,3 +1,16 @@
 .DS_Store
 Brewfile.lock.json
 .idea
+
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/plan
+.serena
+
+# Local-only settings
+# To add local-only ignore patterns:
+# 1. Add patterns to ~/.gitignore_local
+# 2. Run: cat ~/.gitignore_local >> ~/.gitignore_global
+# Example local patterns:
+# .env.local
+# debug.log
