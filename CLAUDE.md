@@ -6,4 +6,6 @@
 ### External Tool Preferences
 
 - For Atlassian operations (Jira, Confluence): Use CLI tools (acli) instead of MCP tools unless specifically instructed otherwise
+  - When obtaining ticket information with acli, it is recommended to use the command as follows.
+  - `acli jira workitem view <item name>`
 - For GitHub operations: Use CLI tools (gh) instead of MCP tools unless specifically instructed otherwise
