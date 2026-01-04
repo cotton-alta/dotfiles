@@ -38,10 +38,6 @@ echo "Setting gitconfig..."
 cp -i $dst/.gitconfig $HOME/.gitconfig
 cp -i $dst/.gitignore_global $HOME/.gitignore_global
 
-echo "Setting iTerm2 config..."
-ln -fs $dst/iTerm2/com.googlecode.iterm2.plist $HOME/Library/Preferences
-killall cfprefsd
-
 echo "Setting Claude config..."
 mkdir -p $HOME/.claude
 ln -fs $dst/CLAUDE.md $HOME/.claude/CLAUDE.md || echo "skipped"
