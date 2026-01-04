@@ -25,8 +25,8 @@ cp -i $dst/Brewfile $HOME/Brewfile
 brew bundle
 
 echo "Creating symbolic links..."
-ln -si $dst/.zshrc $HOME/.zshrc || echo "skipped"
-ln -si $dst/.vimrc $HOME/_vimrc || echo "skipped"
+ln -fs $dst/.zshrc $HOME/.zshrc || echo "skipped"
+ln -fs $dst/.vimrc $HOME/_vimrc || echo "skipped"
 
 echo "Overwrite Syntax..."
 cp -ri $dst/after $HOME/.vim
@@ -45,5 +45,9 @@ killall cfprefsd
 echo "Setting Claude config..."
 mkdir -p $HOME/.claude
 ln -fs $dst/CLAUDE.md $HOME/.claude/CLAUDE.md || echo "skipped"
+
+echo "Setting Ghostty config..."
+mkdir -p $HOME/.config/ghostty
+ln -fs $dst/ghostty_config $HOME/.config/ghostty/config || echo "skipped"
 
 echo "Setup is complete \U1F389"

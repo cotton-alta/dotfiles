@@ -8,3 +8,5 @@ cask "font-hack-nerd-font"
 cask "deepl"
 cask "sequel-ace"
 cask "raycast"
+cask "ghostty"
+

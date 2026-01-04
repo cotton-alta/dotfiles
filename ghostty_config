@@ -1,0 +1,10 @@
+font-size = 14
+
+keybind = shift+enter=text:\x1b\r
+
+window-position-x = 9999
+window-position-y = 9999
+
+window-height = 9999
+window-width = 120
+
