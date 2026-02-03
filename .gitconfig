@@ -10,5 +10,6 @@
     co = checkout
     st = stash -u
     br = branch
+    lo = log --oneline
 [fetch]
     prune = true
