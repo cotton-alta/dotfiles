@@ -1,3 +1,6 @@
+# git-wt init
+eval "$(git wt --init zsh)"
+
 # rbenv init
 eval "$(rbenv init -)"
 
