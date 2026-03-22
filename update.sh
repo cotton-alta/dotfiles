@@ -23,13 +23,22 @@ echo "Creating symbolic links..."
 mkdir -p $HOME/.vim
 mkdir -p $HOME/.claude
 mkdir -p $HOME/.config/ghostty
-ln -s $dst/.zshrc $HOME/.zshrc
-ln -s $dst/.vimrc $HOME/_vimrc
-ln -s $dst/after $HOME/.vim/after
-ln -s $dst/colors $HOME/.vim/colors
-ln -s $dst/.gitconfig $HOME/.gitconfig
-ln -s $dst/.gitignore_global $HOME/.gitignore_global
-ln -s $dst/CLAUDE.md $HOME/.claude/CLAUDE.md
-ln -s $dst/ghostty_config $HOME/.config/ghostty/config
+
+symlink() {
+  if [ -e "$2" ] || [ -L "$2" ]; then
+    echo "Skipping (already exists): $2"
+  else
+    ln -s "$1" "$2"
+  fi
+}
+
+symlink $dst/.zshrc $HOME/.zshrc
+symlink $dst/.vimrc $HOME/_vimrc
+symlink $dst/after $HOME/.vim/after
+symlink $dst/colors $HOME/.vim/colors
+symlink $dst/.gitconfig $HOME/.gitconfig
+symlink $dst/.gitignore_global $HOME/.gitignore_global
+symlink $dst/CLAUDE.md $HOME/.claude/CLAUDE.md
+symlink $dst/ghostty_config $HOME/.config/ghostty/config
 
 echo "Setup is complete \U1F389"
