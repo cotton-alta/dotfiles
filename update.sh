@@ -2,10 +2,10 @@
 
 set -ue -o pipefail
 
-dst="$HOME/src/github.com/cotton-alta/dotfiles"
+dst="$(ghq root)/github.com/cotton-alta/dotfiles"
 if [ ! -d "$dst" ]; then
   echo "Cloning dotfiles..."
-  git clone https://github.com/cotton-alta/dotfiles.git "$dst"
+  ghq get https://github.com/cotton-alta/dotfiles.git
 fi
 
 if [ ! -e $HOME/.zgen ]; then
