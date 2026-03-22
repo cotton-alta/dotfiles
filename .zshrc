@@ -1,3 +1,11 @@
+# antigravity
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+
+# bun
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # git-wt init
 eval "$(git wt --init zsh)"
 
