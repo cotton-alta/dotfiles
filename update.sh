@@ -40,5 +40,6 @@ symlink $dst/.gitconfig $HOME/.gitconfig
 symlink $dst/.gitignore_global $HOME/.gitignore_global
 symlink $dst/CLAUDE.md $HOME/.claude/CLAUDE.md
 symlink $dst/ghostty_config $HOME/.config/ghostty/config
+symlink $dst/nvim $HOME/.config/nvim
 
 echo "Setup is complete \U1F389"
