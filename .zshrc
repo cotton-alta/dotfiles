@@ -9,9 +9,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # git-wt init
 eval "$(git wt --init zsh)"
 
-# rbenv init
-eval "$(rbenv init -)"
-
 # goenv init
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
