@@ -6,6 +6,9 @@ vim.g.maplocalleader = "\\"
 -- ヤンク・削除・ペーストでシステムのクリップボードを利用する
 vim.opt.clipboard = "unnamedplus"
 
+-- 常に行番号を表示する
+vim.opt.number = true
+
 local function copy_current_file_path()
   local path = vim.fn.expand "%:."
   vim.fn.setreg("*", path)
